@@ -64,7 +64,7 @@ public class W1_1 {
         String helloWorld = "Hello World!";
         System.out.println(helloWorld);
 
-        // 2-(2) 배열
+        // 2-(2) week02.배열
         int[] a = {1, 2, 3};
         System.out.println(Arrays.toString(a));
 
