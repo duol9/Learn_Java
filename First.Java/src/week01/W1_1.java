@@ -1,7 +1,9 @@
+package week01;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class W1_1 {
     // public : 외부에서 실행시킬 수 있음
     // static : 이 프로그램이 시작될 때 무조건 실행됨
 
