@@ -9,7 +9,7 @@ public class W2_18 {
 
         //배열 선언 먼저 -> 나중에 초기화
         int[] intArray2;
-        intArray2 = new Int[3];
+        intArray2 = new int[3];
 
         //생성한 배열을 '순회' -> 배열의 값을 하나씩 뽑아서 조회한다.
         // (1) 단건 조회
