@@ -11,7 +11,7 @@ public class Book {
     private boolean isAvailable;
 
 
-    // 2. 생성자 (조립설명서)
+    // 2. 생성자 (조립설명서) -> 통해서 인스턴스화 가능
     public Book(String title, String author, boolean isAvailable) {
         this.title = title;
         this.author = author;

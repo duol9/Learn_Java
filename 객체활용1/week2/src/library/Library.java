@@ -8,7 +8,7 @@ public class Library {
     // 1. 속성
     // 실제 세상처럼,,,, 도서관에는 책이 많음
     // books = [어린왕자] [자바의정석] [] [] [] []
-    private List<Book> books;
+    private static List<Book> books;
     // 2. 생성자(조립설명서)
     // 책을 담을 수 잇는 공간이 생성됨
     public Library() {
@@ -17,7 +17,7 @@ public class Library {
 
     // 3. 기능
     // 도서관에 책 추가
-    public void setAddBook(Book book) {
+    public static void setAddBook(Book book) {
         books.add(book);
     }
 
@@ -27,7 +27,7 @@ public class Library {
     }
 
     // 도서관에서 책 이름으로 검색 (제어문)
-    public void searchByTitle(String title) {
+    public Book searchByTitle(String title) {
         for (Book book : books) {
             String foundBookTitle = book.getTitle();
             if (foundBookTitle.equals(title)) {
