@@ -1,5 +1,7 @@
 package equal;
 
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("프로그램의 시작점");
@@ -15,11 +17,22 @@ public class Main {
         boolean ret = (bookA.equals(bookB));
         System.out.println("ret = " + ret);
 
-/*        boolean ret = (bookA == bookB);
+        boolean ret1 = (bookA == bookB);
         System.out.println("ret = " + ret);
         
         boolean ret2 = (a == b);
-        System.out.println("ret2 = " + ret2);*/
+        System.out.println("ret2 = " + ret2);
+
+        System.out.println(Objects.equals(bookA, bookB));
+
+        bookA = bookB;
+        boolean ret3 = (bookA == bookB);
+        System.out.println("ret3 = " + ret3);
+
+
+
+        System.out.println(bookB);
+        System.out.println(bookA);
 
         System.out.println(a);
         System.out.println(b);

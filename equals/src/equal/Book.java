@@ -7,7 +7,7 @@ package equal;
 
 import java.util.Objects;
 
-public class Book extends Object {
+public class Book {
     //1. 속성
     private String title;
     private String author;
@@ -42,12 +42,26 @@ public class Book extends Object {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Book book)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
         return Objects.equals(title, book.title) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(title, author);
+        int result = Objects.hashCode(title);
+        result = 31 * result + Objects.hashCode(author);
+        return result;
     }
+
+    /*@Override
+    public boolean equals(Object obj) {
+        Book book = (Book) obj;  // obj를 book으로 형변환
+        if (this.title == book.getTitle() && this.author == book.getAuthor()) {
+            return true;
+        } else {
+            return false;
+        }
+    }*/
 }
